@@ -3,8 +3,8 @@
 Statisk omarbetning av vgfonsterputs.se. All text och alla bilder kommer från originalsajten
 (bilderna är nedskalade till max 1600 px och rensade från EXIF/GPS-data).
 
-- `index.html` – en sida: hero, om oss, tjänster, så går det till, bildgalleri (lightbox), prisräknare/offert, kontakt
-- `assets/style.css` – design (Plus Jakarta Sans, marinblått + logotypens gula)
+- `index.html` – en sida: hero med snabbpris, nyckeltal, tjänster, RUT, företaget, referenser (lightbox), prisräknare/offert, kontakt
+- `assets/style.css` – design (Poppins, marinblått med logotypens gula som accent)
 - `assets/app.js` – meny, galleri och prisräknaren
 
 ## Prisräknaren

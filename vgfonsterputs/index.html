@@ -3,373 +3,378 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Västgöta Fönsterputs – Professionell fönsterputsning i Göteborg</title>
-  <meta name="description" content="Professionell fönsterputsning i Göteborg med omnejd – skinande rena fönster för privatpersoner och företag. Räkna ut ditt pris direkt och få 50 % RUT-avdrag.">
+  <title>Västgöta Fönsterputs – Fönsterputsning i Göteborg för hem och företag</title>
+  <meta name="description" content="Professionell fönsterputsning i Göteborg med omnejd för privatpersoner och företag. Abonnemang efter behov och 50 % RUT-avdrag. Räkna ut ditt pris direkt.">
   <link rel="icon" href="images/logo1.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- Topbar -->
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>Fönsterputsning i Göteborg med omnejd · Privat &amp; företag</span>
-    <span class="topbar-links">
+<div class="utility">
+  <div class="wrap utility-inner">
+    <nav class="segments" aria-label="Kundsegment">
+      <a href="#offert" data-kund="privat" class="is-active">Privat</a>
+      <a href="#offert" data-kund="foretag">Företag</a>
+    </nav>
+    <div class="utility-links">
       <a href="tel:+46709325486">0709-32 54 86</a>
       <a href="mailto:info@vgfonsterputs.se">info@vgfonsterputs.se</a>
-    </span>
+    </div>
   </div>
 </div>
 
-<!-- Header -->
 <header class="header" id="top">
-  <div class="container header-inner">
-    <a href="#top" class="brand">
-      <img src="images/logo1.svg" alt="" width="22" height="36">
-      <span>Västgöta<b>Fönsterputs</b></span>
+  <div class="wrap header-inner">
+    <a href="#top" class="logo" aria-label="Västgöta Fönsterputs – till startsidan">
+      <span class="logo-mark"><img src="images/logo1.svg" alt="" width="18" height="30"></span>
+      <span class="logo-text">Västgöta<br>Fönsterputs</span>
     </a>
     <nav class="nav" id="nav">
-      <a href="#om-oss">Om oss</a>
       <a href="#tjanster">Tjänster</a>
-      <a href="#bilder">Bilder</a>
-      <a href="#offert">Prisräknare</a>
+      <a href="#foretaget">Företaget</a>
+      <a href="#referenser">Referenser</a>
       <a href="#kontakt">Kontakt</a>
-      <a href="#offert" class="btn btn-primary btn-sm">Få offert</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Meny" aria-expanded="false"><span></span><span></span></button>
+    <div class="header-cta">
+      <a href="#offert" class="btn btn-dark">Beräkna pris</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Öppna meny" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow"><i class="dot"></i> Göteborg med omnejd · Sedan 2018</span>
-      <h1>Skinande rena fönster.<br><span class="hl">Utan krångel.</span></h1>
-      <p class="lead">Västgöta Fönsterputs putsar alla typer av fönster – stora som små, utvändiga och fyrsidiga – åt privatpersoner och företag. Räkna ut ditt pris på under en minut.</p>
-      <div class="hero-cta">
-        <a href="#offert" class="btn btn-primary btn-lg">Räkna ut pris direkt <span aria-hidden="true">→</span></a>
-        <a href="tel:+46709325486" class="btn btn-ghost btn-lg">Ring 0709-32 54 86</a>
-      </div>
-      <ul class="hero-checks">
-        <li>50 % RUT-avdrag</li>
-        <li>Abonnemang efter behov</li>
-        <li>Privat &amp; företag</li>
-      </ul>
-    </div>
-    <div class="hero-media">
-      <div class="hero-img main"><img src="images/gallery/2.jpg" alt="Fönsterputs utfört av Västgöta Fönsterputs i skärgården"></div>
-      <div class="hero-img small a"><img src="images/gallery/3.jpg" alt="Fönsterputsning på höga höjder i Göteborg"></div>
-      <div class="hero-img small b"><img src="images/gallery/12.jpg" alt="Restaurang i Göteborg med fönster på snedden"></div>
-      <div class="hero-badge">
-        <strong>50 %</strong>
-        <span>RUT-avdrag på<br>arbetskostnaden</span>
-      </div>
-    </div>
-  </div>
-</section>
+<main>
 
-<!-- Stats -->
-<section class="stats">
-  <div class="container stats-grid">
-    <div class="stat"><strong>2017</strong><span>Började putsa fönster</span></div>
-    <div class="stat"><strong>2018</strong><span>Västgöta Fönsterputs grundas</span></div>
-    <div class="stat"><strong>50 %</strong><span>RUT-avdrag för privatkunder</span></div>
-    <div class="stat"><strong>Alla</strong><span>typer av fönster – stora som små</span></div>
-  </div>
-</section>
-
-<!-- Om oss -->
-<section class="section" id="om-oss">
-  <div class="container split">
-    <div class="split-media">
-      <img src="images/gallery/7.jpg" alt="Västgöta putsar små och stora fönster kring Göteborg" class="rounded-img">
-      <div class="float-card">
-        <img src="images/logo1.svg" alt="" width="20" height="33">
-        <div><strong>Vi växer</strong><span>och söker fler fönsterputsare</span></div>
-      </div>
-    </div>
-    <div>
-      <span class="kicker">Om oss</span>
-      <h2>Ett lokalt fönsterputsföretag med höga krav</h2>
-      <p>Västgöta Fönsterputs grundades av <strong>Otis Sunneräng</strong> våren 2018, efter att ha börjat med fönsterputsning våren 2017.</p>
-      <p>Våren 2022 anställdes <strong>Jaime Rozo</strong>, som är en otroligt duktig fönsterputsare. Så för närvarande är vi två som putsar – och vi söker bli fler!</p>
-      <div class="team">
-        <div class="person"><span class="avatar">OS</span><div><strong>Otis Sunneräng</strong><span>Grundare · putsar sedan 2017</span></div></div>
-        <div class="person"><span class="avatar">JR</span><div><strong>Jaime Rozo</strong><span>Fönsterputsare · sedan 2022</span></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Tjänster -->
-<section class="section section-alt" id="tjanster">
-  <div class="container">
-    <div class="section-head">
-      <span class="kicker">Tjänster</span>
-      <h2>Allt för rena fönster – och lite till</h2>
-      <p>Vi specialiserar oss på fönsterputsning i Göteborg med omnejd. Våra tjänster riktar sig både till privatkunder och företag.</p>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M12 3v18M4 12h16"/></svg></div>
-        <h3>Fönsterputsning</h3>
-        <p>Alla typer av fönster, både stora och små, utvändiga och fyrsidiga. Villor, lägenheter, sommarställen och lokaler.</p>
-      </article>
-      <article class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
-        <h3>Abonnemang</h3>
-        <p>För dig som önskar regelbunden fönsterputsning erbjuder vi abonnemang som skräddarsys efter dina behov.</p>
-      </article>
-      <article class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
-        <h3>Företag &amp; restauranger</h3>
-        <p>Skyltfönster, glaspartier, kontor och restauranger. Rena fönster ger ett professionellt första intryck.</p>
-      </article>
-      <article class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M8 21V3M16 21V3M8 7h8M8 12h8M8 17h8"/></svg></div>
-        <h3>Höghöjdsstädning</h3>
-        <p>God erfarenhet av arbete på höga höjder – inomhus som utomhus, med stege och teleskopstång.</p>
-      </article>
-      <article class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
-        <h3>Städning</h3>
-        <p>Även om vi fokuserar på fönsterputsning har vi god erfarenhet av vanlig städning.</p>
-      </article>
-      <article class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="14" height="6" rx="1.5"/><path d="M17 6h3v5h-8v3M12 14v7"/></svg></div>
-        <h3>Måleri</h3>
-        <p>Vi har dessutom god erfarenhet av måleri – fråga oss gärna i samband med din offert.</p>
-      </article>
-    </div>
-    <div class="rut-banner">
-      <div>
-        <strong>RUT-avdrag – 50 % på arbetskostnaden</strong>
-        <p>Som kund hos oss hjälper vi dig självklart att nyttja RUT-avdraget. Vi sköter ansökan åt dig.</p>
-      </div>
-      <a href="#offert" class="btn btn-dark">Se ditt pris efter RUT</a>
-    </div>
-  </div>
-</section>
-
-<!-- Process -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="kicker">Så går det till</span>
-      <h2>Från offert till skinande rent i tre steg</h2>
-    </div>
-    <ol class="steps">
-      <li><span>01</span><h3>Räkna ut ditt pris</h3><p>Fyll i antal fönster, typ och tillval i vår prisräknare – du ser en prisindikation direkt.</p></li>
-      <li><span>02</span><h3>Vi bekräftar offerten</h3><p>Skicka förfrågan, gärna med bilder på dina fönster, så återkommer vi med en specifik och prisvänlig offert.</p></li>
-      <li><span>03</span><h3>Vi putsar</h3><p>Vi kommer på överenskommen tid och lämnar fönstren skinande rena. RUT-avdraget dras direkt på fakturan.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- Bilder -->
-<section class="section section-alt" id="bilder">
-  <div class="container">
-    <div class="section-head row">
-      <div>
-        <span class="kicker">Bilder</span>
-        <h2>Ett urval av våra uppdrag</h2>
-      </div>
-      <a class="btn btn-ghost" href="https://www.instagram.com/vastgotafonsterputs" target="_blank" rel="noopener">
-        <svg class="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-        Följ oss på Instagram
-      </a>
-    </div>
-    <div class="gallery" id="gallery">
-      <button class="g tall"><img loading="lazy" src="images/gallery/1.jpg" alt="Västgöta fönsterputs på landsbygden"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/2.jpg" alt="Fönsterputs utfört av Västgöta fönsterputs i skärgården"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/3.jpg" alt="Fönsterputsning på höga höjder i Göteborg"></button>
-      <button class="g tall"><img loading="lazy" src="images/gallery/4.jpg" alt="Säker fönsterputsning i Göteborg av Västgöta fönsterputs"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/5.jpg" alt="Fönsterputsning inne hos kund i Göteborg"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/6.jpg" alt="Västgöta fönsterputs putsar på sommarställen"></button>
-      <button class="g tall"><img loading="lazy" src="images/gallery/8.jpg" alt="Västgötas mycket proffsiga fönsterputsare"></button>
-      <button class="g wide"><img loading="lazy" src="images/gallery/9.jpg" alt="Västgöta putsar på höga höjder inomhus"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/10.jpg" alt="Restauranger i Göteborg anlitar Västgöta fönsterputs"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/11.jpg" alt="Västgöta putsar äldre fönster i Göteborg"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/13.jpg" alt="Västgöta fixar rena fönster för restaurang i Göteborg"></button>
-      <button class="g"><img loading="lazy" src="images/gallery/7.jpg" alt="Västgöta putsar små och stora fönster kring Göteborg"></button>
-    </div>
-  </div>
-</section>
-
-<!-- Offert / prisräknare -->
-<section class="section quote-section" id="offert">
-  <div class="container">
-    <div class="section-head light">
-      <span class="kicker">Prisräknare &amp; offert</span>
-      <h2>Räkna ut ditt pris – direkt</h2>
-      <p>Fyll i dina fönster och tillval. Priset uppdateras medan du skriver. Skicka sedan förfrågan så bekräftar vi offerten.</p>
-    </div>
-
-    <form class="quote" id="quote" method="post" action="https://formspree.io/f/xwpeoova" novalidate>
-      <div class="quote-main">
-
-        <!-- Steg 1 -->
-        <fieldset class="panel">
-          <legend><span class="step-no">1</span> Kund &amp; frekvens</legend>
-          <div class="seg" role="radiogroup" aria-label="Kundtyp">
-            <label><input type="radio" name="kundtyp" value="privat" checked><span>Privatperson</span></label>
-            <label><input type="radio" name="kundtyp" value="foretag"><span>Företag / BRF</span></label>
-          </div>
-          <div class="grid-2">
-            <label class="field">
-              <span>Hur ofta?</span>
-              <select name="frekvens" id="frekvens">
-                <option value="1">Engångsputs</option>
-                <option value="2">Abonnemang – 2 ggr/år</option>
-                <option value="4">Abonnemang – 4 ggr/år</option>
-                <option value="6">Abonnemang – 6 ggr/år</option>
-                <option value="12">Abonnemang – varje månad</option>
-              </select>
-            </label>
-            <label class="field">
-              <span>Område</span>
-              <select name="omrade" id="omrade">
-                <option value="gbg">Göteborg</option>
-                <option value="nara">Kranskommun (Mölndal, Partille, Kungälv …)</option>
-                <option value="langre">Längre bort (Alingsås, Kungsbacka …)</option>
-              </select>
-            </label>
-          </div>
-        </fieldset>
-
-        <!-- Steg 2 -->
-        <fieldset class="panel">
-          <legend><span class="step-no">2</span> Dina fönster</legend>
-          <p class="hint">Räkna varje fönsterbåge som öppnas separat som ett fönster. Osäker? Ta en bild och skicka med förfrågan.</p>
-          <div class="win-list" id="winList"><!-- fylls av JS --></div>
-        </fieldset>
-
-        <!-- Steg 3 -->
-        <fieldset class="panel">
-          <legend><span class="step-no">3</span> Putsning &amp; höjd</legend>
-          <div class="field-label">Vilka sidor ska putsas?</div>
-          <div class="seg seg-3" role="radiogroup" aria-label="Sidor">
-            <label><input type="radio" name="sidor" value="ut"><span>Endast utsida</span></label>
-            <label><input type="radio" name="sidor" value="inut" checked><span>In- &amp; utsida</span></label>
-            <label><input type="radio" name="sidor" value="in"><span>Endast insida</span></label>
-          </div>
-          <div class="field-label">Hur högt sitter fönstren?</div>
-          <div class="seg seg-3" role="radiogroup" aria-label="Höjd">
-            <label><input type="radio" name="hojd" value="1" checked><span>Markplan / 1 vån</span></label>
-            <label><input type="radio" name="hojd" value="2"><span>2 våningar</span></label>
-            <label><input type="radio" name="hojd" value="3"><span>3+ vån / stege</span></label>
-          </div>
-        </fieldset>
-
-        <!-- Steg 4 -->
-        <fieldset class="panel">
-          <legend><span class="step-no">4</span> Tillval</legend>
-          <div class="addons" id="addons"><!-- fylls av JS --></div>
-        </fieldset>
-
-        <!-- Steg 5 -->
-        <fieldset class="panel">
-          <legend><span class="step-no">5</span> Dina uppgifter</legend>
-          <div class="grid-2">
-            <label class="field"><span>Namn *</span><input type="text" name="namn" required autocomplete="name"></label>
-            <label class="field"><span>Telefon *</span><input type="tel" name="telefon" required autocomplete="tel"></label>
-            <label class="field"><span>E-post *</span><input type="email" name="email" required autocomplete="email"></label>
-            <label class="field"><span>Adress / ort</span><input type="text" name="adress" autocomplete="street-address"></label>
-            <label class="field"><span>Önskat datum</span><input type="date" name="datum"></label>
-            <label class="field"><span>Bostadstyp</span>
-              <select name="bostad">
-                <option>Villa / radhus</option>
-                <option>Lägenhet</option>
-                <option>Fritidshus</option>
-                <option>Butik / restaurang</option>
-                <option>Kontor / lokal</option>
-                <option>BRF / fastighet</option>
-              </select>
-            </label>
-          </div>
-          <label class="field"><span>Meddelande</span><textarea name="meddelande" rows="3" placeholder="T.ex. portkod, husdjur, svåråtkomliga fönster …"></textarea></label>
-          <label class="check"><input type="checkbox" name="gdpr" required><span>Jag godkänner att Västgöta Fönsterputs sparar mina uppgifter för att kunna besvara förfrågan.</span></label>
-          <input type="hidden" name="_subject" value="Ny offertförfrågan via hemsidan">
-          <input type="hidden" name="offert_sammanfattning" id="summaryField">
-        </fieldset>
-      </div>
-
-      <!-- Sammanfattning -->
-      <aside class="quote-side">
-        <div class="summary" id="summary">
-          <div class="summary-head">
-            <span>Din prisindikation</span>
-            <span class="pill" id="pillFreq">Engångsputs</span>
-          </div>
-          <div class="price-big"><span id="priceMain">0</span> <small>kr</small></div>
-          <div class="price-sub" id="priceSub">per tillfälle efter RUT-avdrag</div>
-          <ul class="lines" id="lines"></ul>
-          <div class="totals" id="totals"></div>
-          <div class="meter"><div class="meter-bar" id="meterBar"></div></div>
-          <p class="fine" id="fine"></p>
-          <button type="submit" class="btn btn-primary btn-block btn-lg">Skicka offertförfrågan</button>
-          <a class="btn btn-ghost-light btn-block" href="tel:+46709325486">Hellre ringa? 0709-32 54 86</a>
-          <div class="form-msg" id="formMsg" role="status"></div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-frame">
+        <img src="images/gallery/2.jpg" alt="Fönsterputsare från Västgöta Fönsterputs putsar ett panoramafönster med utsikt över skärgården">
+        <div class="hero-content">
+          <p class="overline light">Fönsterputsning i Göteborg med omnejd</p>
+          <h1>Klar sikt för<br>hem och företag.</h1>
+          <p class="hero-lead">Vi putsar alla typer av fönster – stora som små, utvändiga och fyrsidiga. Sedan 2018.</p>
         </div>
-      </aside>
-    </form>
-  </div>
-</section>
+      </div>
 
-<!-- Kontakt -->
-<section class="section" id="kontakt">
-  <div class="container contact">
-    <div>
-      <span class="kicker">Kontakt</span>
-      <h2>Boka din fönsterputs idag</h2>
-      <p>Kontakta oss via e-post, telefon eller formuläret här på hemsidan. Maila gärna bilder på dina fönster i samband med detta så kan vi ge dig en mer specifik och prisvänlig offert.</p>
+      <form class="quick" id="quick" aria-label="Snabb prisberäkning">
+        <div class="quick-title">
+          <strong>Vad kostar det?</strong>
+          <span>Få ett prisförslag på under en minut.</span>
+        </div>
+        <label class="quick-field">
+          <span>Antal fönster</span>
+          <input type="number" id="quickCount" min="1" max="999" value="10" inputmode="numeric">
+        </label>
+        <label class="quick-field">
+          <span>Typ av fönster</span>
+          <select id="quickType">
+            <option value="vanligt">Vanliga fönster</option>
+            <option value="kopplat">Kopplade / fyrsidiga</option>
+            <option value="sprojs">Spröjsade fönster</option>
+            <option value="parti">Glasparti / skyltfönster</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-accent">Fortsätt</button>
+      </form>
     </div>
-    <div class="contact-cards">
-      <a class="contact-card" href="tel:+46709325486">
-        <span class="ci"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
-        <span><small>Ring oss</small><strong>0709-32 54 86</strong></span>
-      </a>
-      <a class="contact-card" href="mailto:info@vgfonsterputs.se">
-        <span class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-        <span><small>Maila oss</small><strong>info@vgfonsterputs.se</strong></span>
-      </a>
-      <a class="contact-card" href="https://www.instagram.com/vastgotafonsterputs" target="_blank" rel="noopener">
-        <span class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span>
-        <span><small>Instagram</small><strong>@vastgotafonsterputs</strong></span>
-      </a>
+  </section>
+
+  <!-- Nyckeltal -->
+  <section class="facts" aria-label="Fakta om Västgöta Fönsterputs">
+    <div class="wrap facts-grid">
+      <div><span class="fact-num">2018</span><span class="fact-label">Grundat i Göteborg</span></div>
+      <div><span class="fact-num">50&nbsp;%</span><span class="fact-label">RUT-avdrag på arbetskostnaden</span></div>
+      <div><span class="fact-num">Privat &amp; företag</span><span class="fact-label">Villor, lägenheter, butiker och restauranger</span></div>
+      <div><span class="fact-num">Abonnemang</span><span class="fact-label">Skräddarsytt efter dina behov</span></div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Tjänster -->
+  <section class="section" id="tjanster">
+    <div class="wrap">
+      <header class="section-header">
+        <p class="overline">Våra tjänster</p>
+        <h2>Fönsterputsning är vår kärnverksamhet</h2>
+        <p class="section-intro">Vi specialiserar oss på fönsterputsning i Göteborg med omnejd. Våra tjänster riktar sig både till privatkunder och företag.</p>
+      </header>
+
+      <div class="services">
+        <a class="service" href="#offert" data-kund="privat">
+          <div class="service-img"><img loading="lazy" src="images/gallery/1.jpg" alt="Villa på landsbygden där Västgöta Fönsterputs putsat fönster"></div>
+          <div class="service-body">
+            <p class="overline">Privat</p>
+            <h3>Fönsterputs för hemmet</h3>
+            <p>Villor, radhus, lägenheter och sommarställen. Vi hjälper dig att nyttja RUT-avdraget och sköter ansökan åt dig.</p>
+            <span class="link-arrow">Beräkna pris</span>
+          </div>
+        </a>
+        <a class="service" href="#offert" data-kund="foretag">
+          <div class="service-img"><img loading="lazy" src="images/gallery/10.jpg" alt="Restaurang i Göteborg som anlitar Västgöta Fönsterputs"></div>
+          <div class="service-body">
+            <p class="overline">Företag</p>
+            <h3>Butiker, kontor &amp; restauranger</h3>
+            <p>Skyltfönster, glaspartier och lokaler. Rena fönster ger ett professionellt första intryck – varje dag.</p>
+            <span class="link-arrow">Begär offert</span>
+          </div>
+        </a>
+        <a class="service" href="#offert" data-freq="4">
+          <div class="service-img"><img loading="lazy" src="images/gallery/7.jpg" alt="Fönsterputsare putsar fönster med skrapa"></div>
+          <div class="service-body">
+            <p class="overline">Abonnemang</p>
+            <h3>Regelbunden fönsterputs</h3>
+            <p>För dig som önskar regelbunden fönsterputsning erbjuder vi abonnemang som kan skräddarsys efter dina behov.</p>
+            <span class="link-arrow">Se abonnemangspris</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="also">
+        <p class="overline">Därutöver</p>
+        <ul class="also-list">
+          <li><span>Höghöjdsstädning</span><span>Arbete på hög höjd, inomhus och utomhus.</span></li>
+          <li><span>Städning</span><span>God erfarenhet av vanlig städning.</span></li>
+          <li><span>Måleri</span><span>Fråga oss i samband med din offert.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RUT -->
+  <section class="rut">
+    <div class="wrap rut-grid">
+      <div class="rut-num">50<span>%</span></div>
+      <div>
+        <p class="overline light">RUT-avdrag</p>
+        <h2>Halva arbetskostnaden betalar du inte</h2>
+        <p>Som kund hos oss hjälper vi dig självklart att nyttja RUT-avdraget för att få 50 % avdrag på arbetskostnaden. Avdraget görs direkt på fakturan.</p>
+        <a href="#offert" class="btn btn-accent">Se ditt pris efter avdrag</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Företaget -->
+  <section class="section" id="foretaget">
+    <div class="wrap about">
+      <div class="about-media">
+        <img loading="lazy" src="images/gallery/8.jpg" alt="Fönsterputsare från Västgöta Fönsterputs i arbete">
+      </div>
+      <div class="about-text">
+        <p class="overline">Företaget</p>
+        <h2>Ett lokalt företag som vill växa</h2>
+        <p class="lead">Västgöta Fönsterputs grundades av Otis Sunneräng våren 2018, efter att ha börjat med fönsterputsning våren 2017.</p>
+        <p>Våren 2022 anställdes Jaime Rozo, som är en otroligt duktig fönsterputsare. För närvarande är vi två som putsar – och vi söker bli fler.</p>
+        <dl class="people">
+          <div><dt>Otis Sunneräng</dt><dd>Grundare</dd></div>
+          <div><dt>Jaime Rozo</dt><dd>Fönsterputsare</dd></div>
+        </dl>
+        <a href="mailto:info@vgfonsterputs.se?subject=Jobba%20hos%20oss" class="link-arrow">Vill du jobba hos oss?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referenser / bilder -->
+  <section class="section section-tint" id="referenser">
+    <div class="wrap">
+      <header class="section-header split-header">
+        <div>
+          <p class="overline">Referenser</p>
+          <h2>Ett urval av våra uppdrag</h2>
+        </div>
+        <a class="link-arrow" href="https://www.instagram.com/vastgotafonsterputs" target="_blank" rel="noopener">Fler bilder på Instagram</a>
+      </header>
+      <div class="gallery" id="gallery">
+        <button class="g g-lg"><img loading="lazy" src="images/gallery/3.jpg" alt="Fönsterputsning på höga höjder i Göteborg"></button>
+        <button class="g"><img loading="lazy" src="images/gallery/4.jpg" alt="Säker fönsterputsning i Göteborg av Västgöta Fönsterputs"></button>
+        <button class="g"><img loading="lazy" src="images/gallery/5.jpg" alt="Fönsterputsning inne hos kund i Göteborg"></button>
+        <button class="g"><img loading="lazy" src="images/gallery/6.jpg" alt="Västgöta Fönsterputs putsar på sommarställen"></button>
+        <button class="g"><img loading="lazy" src="images/gallery/9.jpg" alt="Västgöta putsar på höga höjder inomhus"></button>
+        <button class="g"><img loading="lazy" src="images/gallery/11.jpg" alt="Västgöta putsar äldre fönster i Göteborg"></button>
+        <button class="g"><img loading="lazy" src="images/gallery/12.jpg" alt="Restaurang i Göteborg med fönster på snedden"></button>
+        <button class="g g-wide"><img loading="lazy" src="images/gallery/13.jpg" alt="Västgöta fixar rena fönster för restaurang i Göteborg"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offert -->
+  <section class="section" id="offert">
+    <div class="wrap">
+      <header class="section-header">
+        <p class="overline">Prisberäkning &amp; offert</p>
+        <h2>Beräkna ditt pris</h2>
+        <p class="section-intro">Ange dina fönster och eventuella tillval. Priset räknas ut löpande. Skicka förfrågan så bekräftar vi offerten – gärna med bilder på dina fönster.</p>
+      </header>
+
+      <form class="quote" id="quote" method="post" action="https://formspree.io/f/xwpeoova" novalidate>
+        <div class="quote-main">
+
+          <section class="block">
+            <h3 class="block-title"><span>01</span>Kund och omfattning</h3>
+            <div class="toggle" role="radiogroup" aria-label="Kundtyp">
+              <label><input type="radio" name="kundtyp" value="privat" checked><span>Privatperson</span></label>
+              <label><input type="radio" name="kundtyp" value="foretag"><span>Företag / BRF</span></label>
+            </div>
+            <div class="row-2">
+              <label class="field">
+                <span>Hur ofta</span>
+                <select name="frekvens" id="frekvens">
+                  <option value="1">Engångsputs</option>
+                  <option value="2">Abonnemang, 2 gånger per år</option>
+                  <option value="4">Abonnemang, 4 gånger per år</option>
+                  <option value="6">Abonnemang, 6 gånger per år</option>
+                  <option value="12">Abonnemang, varje månad</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Område</span>
+                <select name="omrade" id="omrade">
+                  <option value="gbg">Göteborg</option>
+                  <option value="nara">Kranskommun (Mölndal, Partille, Kungälv m.fl.)</option>
+                  <option value="langre">Längre bort (Alingsås, Kungsbacka m.fl.)</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <section class="block">
+            <h3 class="block-title"><span>02</span>Fönster</h3>
+            <p class="block-hint">Räkna varje båge som öppnas separat som ett fönster.</p>
+            <div class="win-list" id="winList"></div>
+          </section>
+
+          <section class="block">
+            <h3 class="block-title"><span>03</span>Putsning och höjd</h3>
+            <p class="field-label">Sidor som ska putsas</p>
+            <div class="toggle toggle-3" role="radiogroup" aria-label="Sidor">
+              <label><input type="radio" name="sidor" value="ut"><span>Utsida</span></label>
+              <label><input type="radio" name="sidor" value="inut" checked><span>In- och utsida</span></label>
+              <label><input type="radio" name="sidor" value="in"><span>Insida</span></label>
+            </div>
+            <p class="field-label">Höjd</p>
+            <div class="toggle toggle-3" role="radiogroup" aria-label="Höjd">
+              <label><input type="radio" name="hojd" value="1" checked><span>Markplan</span></label>
+              <label><input type="radio" name="hojd" value="2"><span>Två våningar</span></label>
+              <label><input type="radio" name="hojd" value="3"><span>Tre eller fler</span></label>
+            </div>
+          </section>
+
+          <section class="block">
+            <h3 class="block-title"><span>04</span>Tillval</h3>
+            <div class="addons" id="addons"></div>
+          </section>
+
+          <section class="block">
+            <h3 class="block-title"><span>05</span>Kontaktuppgifter</h3>
+            <div class="row-2">
+              <label class="field"><span>Namn *</span><input type="text" name="namn" required autocomplete="name"></label>
+              <label class="field"><span>Telefon *</span><input type="tel" name="telefon" required autocomplete="tel"></label>
+              <label class="field"><span>E-post *</span><input type="email" name="email" required autocomplete="email"></label>
+              <label class="field"><span>Adress och ort</span><input type="text" name="adress" autocomplete="street-address"></label>
+              <label class="field"><span>Önskat datum</span><input type="date" name="datum"></label>
+              <label class="field"><span>Fastighetstyp</span>
+                <select name="bostad">
+                  <option>Villa / radhus</option>
+                  <option>Lägenhet</option>
+                  <option>Fritidshus</option>
+                  <option>Butik / restaurang</option>
+                  <option>Kontor / lokal</option>
+                  <option>BRF / fastighet</option>
+                </select>
+              </label>
+            </div>
+            <label class="field"><span>Meddelande</span><textarea name="meddelande" rows="3" placeholder="Portkod, svåråtkomliga fönster, övriga önskemål"></textarea></label>
+            <label class="consent"><input type="checkbox" name="gdpr" required><span>Jag godkänner att Västgöta Fönsterputs sparar mina uppgifter för att kunna besvara förfrågan.</span></label>
+            <input type="hidden" name="_subject" value="Ny offertförfrågan via hemsidan">
+            <input type="hidden" name="offert_sammanfattning" id="summaryField">
+          </section>
+        </div>
+
+        <aside class="quote-side">
+          <div class="summary">
+            <div class="summary-top">
+              <p class="overline light">Prisförslag</p>
+              <p class="summary-freq" id="pillFreq">Engångsputs</p>
+            </div>
+            <div class="summary-price"><span id="priceMain">0</span> kr</div>
+            <p class="summary-sub" id="priceSub">per tillfälle efter RUT-avdrag</p>
+            <ul class="summary-lines" id="lines"></ul>
+            <div class="summary-totals" id="totals"></div>
+            <p class="summary-fine" id="fine"></p>
+            <button type="submit" class="btn btn-accent btn-block">Skicka offertförfrågan</button>
+            <p class="summary-call">Hellre ringa? <a href="tel:+46709325486">0709-32 54 86</a></p>
+            <div class="form-msg" id="formMsg" role="status"></div>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <div class="contact-panel">
+        <div class="contact-intro">
+          <p class="overline light">Kontakt</p>
+          <h2>Boka din fönsterputs idag</h2>
+          <p>Kontakta oss via e-post, telefon eller formuläret. Maila gärna bilder på dina fönster så kan vi ge dig en mer specifik och prisvänlig offert.</p>
+        </div>
+        <div class="contact-list">
+          <a href="tel:+46709325486"><span>Telefon</span><strong>0709-32 54 86</strong></a>
+          <a href="mailto:info@vgfonsterputs.se"><span>E-post</span><strong>info@vgfonsterputs.se</strong></a>
+          <a href="https://www.instagram.com/vastgotafonsterputs" target="_blank" rel="noopener"><span>Instagram</span><strong>@vastgotafonsterputs</strong></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer class="footer">
-  <div class="container footer-inner">
-    <div class="brand light">
-      <img src="images/logo1.svg" alt="" width="22" height="36">
-      <span>Västgöta<b>Fönsterputs</b></span>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo light">
+          <span class="logo-mark"><img src="images/logo1.svg" alt="" width="18" height="30"></span>
+          <span class="logo-text">Västgöta<br>Fönsterputs</span>
+        </a>
+        <p>Professionell fönsterputsning i Göteborg med omnejd sedan 2018.</p>
+      </div>
+      <div>
+        <h4>Tjänster</h4>
+        <a href="#tjanster">Fönsterputs privat</a>
+        <a href="#tjanster">Fönsterputs företag</a>
+        <a href="#tjanster">Abonnemang</a>
+        <a href="#tjanster">Höghöjdsstädning</a>
+      </div>
+      <div>
+        <h4>Företaget</h4>
+        <a href="#foretaget">Om oss</a>
+        <a href="#referenser">Referenser</a>
+        <a href="mailto:info@vgfonsterputs.se?subject=Jobba%20hos%20oss">Jobba hos oss</a>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <a href="tel:+46709325486">0709-32 54 86</a>
+        <a href="mailto:info@vgfonsterputs.se">info@vgfonsterputs.se</a>
+        <a href="https://www.instagram.com/vastgotafonsterputs" target="_blank" rel="noopener">Instagram</a>
+      </div>
     </div>
-    <p>Professionell fönsterputsning i Göteborg med omnejd.</p>
-    <div class="footer-links">
-      <a href="tel:+46709325486">0709-32 54 86</a>
-      <a href="mailto:info@vgfonsterputs.se">info@vgfonsterputs.se</a>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Västgöta Fönsterputs</span>
+      <a href="#top">Till toppen</a>
     </div>
-    <small>© <span id="year"></span> Västgöta Fönsterputs</small>
   </div>
 </footer>
 
-<!-- Lightbox -->
 <div class="lightbox" id="lightbox" hidden>
   <button class="lb-close" aria-label="Stäng">×</button>
-  <button class="lb-nav prev" aria-label="Föregående">‹</button>
+  <button class="lb-nav prev" aria-label="Föregående bild">‹</button>
   <img alt="">
-  <button class="lb-nav next" aria-label="Nästa">›</button>
+  <button class="lb-nav next" aria-label="Nästa bild">›</button>
 </div>
 
-<!-- Mobil sticky CTA -->
-<a href="#offert" class="mobile-cta" id="mobileCta">Räkna ut pris <span id="mobilePrice"></span></a>
+<a href="#offert" class="mobile-bar" id="mobileCta"><span>Beräkna pris</span><strong id="mobilePrice"></strong></a>
 
 <script src="assets/app.js"></script>
 </body>

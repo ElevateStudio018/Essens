@@ -59,17 +59,15 @@
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
   var kr = function (n) { return Math.round(n).toLocaleString('sv-SE'); };
 
-  /* ===================== Header & meny ===================== */
-  var header = $('.header');
-  var burger = $('#burger');
+  /* ===================== Meny ===================== */
+  var menuBtn = $('#menuBtn');
   var nav = $('#nav');
-  window.addEventListener('scroll', function () { header.classList.toggle('scrolled', window.scrollY > 8); }, { passive: true });
-  burger.addEventListener('click', function () {
+  menuBtn.addEventListener('click', function () {
     var open = nav.classList.toggle('open');
-    burger.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-expanded', open);
   });
   $$('#nav a').forEach(function (a) {
-    a.addEventListener('click', function () { nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); });
+    a.addEventListener('click', function () { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); });
   });
   $('#year').textContent = new Date().getFullYear();
 
@@ -78,7 +76,7 @@
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
-    $$('.card, .steps li, .stat, .split > *, .contact > *, .section-head, .g').forEach(function (el) {
+    $$('.service, .facts-grid > div, .about > *, .section-header, .g, .rut-grid > *, .contact-panel, .also').forEach(function (el) {
       el.classList.add('reveal'); io.observe(el);
     });
   }
@@ -226,11 +224,10 @@
       (freq > 1 && pay ? ' · ' + kr(perYear) + ' kr/år' : '');
     $('#pillFreq').textContent = PRICES.frequency[freq].label;
     var saved = rut + discount;
-    $('#meterBar').style.width = gross ? Math.min(100, (saved / (gross + discount)) * 100) + '%' : '0';
     $('#fine').textContent = (saved && gross ? 'Du sparar ' + kr(saved) + ' kr per tillfälle. ' : '') +
       'Priset är en indikation. Slutligt pris bekräftas i offerten' +
       (quoteOnly.length ? ' – ' + quoteOnly.join(', ').toLowerCase() + ' offereras separat' : '') + '.';
-    $('#mobilePrice').textContent = pay ? kr(pay) + ' kr' : '→';
+    $('#mobilePrice').textContent = pay ? kr(pay) + ' kr' : '';
 
     lastSummary =
       'Kundtyp: ' + (privat ? 'Privat' : 'Företag') + '\n' +
@@ -253,6 +250,30 @@
   }
 
   calc();
+
+  /* ===================== Genvägar till räknaren ===================== */
+  function setKund(kund) {
+    var r = form.querySelector('input[name="kundtyp"][value="' + kund + '"]');
+    if (r) r.checked = true;
+    $$('.segments a').forEach(function (a) { a.classList.toggle('is-active', a.dataset.kund === kund); });
+  }
+  $$('[data-kund]').forEach(function (el) {
+    el.addEventListener('click', function () { setKund(el.dataset.kund); calc(); });
+  });
+  $$('[data-freq]').forEach(function (el) {
+    el.addEventListener('click', function () { form.elements.frekvens.value = el.dataset.freq; calc(); });
+  });
+  $$('input[name="kundtyp"]', form).forEach(function (r) {
+    r.addEventListener('change', function () { setKund(r.value); });
+  });
+
+  $('#quick').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var n = Math.max(1, Math.min(999, parseInt($('#quickCount').value, 10) || 1));
+    form.elements['antal_' + $('#quickType').value].value = n;
+    calc();
+    $('#offert').scrollIntoView({ behavior: 'smooth' });
+  });
 
   /* ===================== Skicka ===================== */
   var msg = $('#formMsg');
@@ -302,11 +323,17 @@
   }
 
   /* ===================== Mobil CTA ===================== */
+  // Visas först när snabbformuläret i hero har passerats, döljs vid räknaren
   var cta = $('#mobileCta');
   var quoteSec = $('#offert');
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function (entries) {
-      cta.classList.toggle('hide', entries[0].isIntersecting);
-    }, { threshold: 0.05 }).observe(quoteSec);
+  var quickEl = $('#quick');
+  function toggleCta() {
+    var o = quoteSec.getBoundingClientRect();
+    var beforeQuick = quickEl.getBoundingClientRect().bottom > 0;
+    var inQuote = o.top < window.innerHeight && o.bottom > 0;
+    cta.classList.toggle('hide', beforeQuick || inQuote);
   }
+  window.addEventListener('scroll', toggleCta, { passive: true });
+  window.addEventListener('resize', toggleCta);
+  toggleCta();
 })();
