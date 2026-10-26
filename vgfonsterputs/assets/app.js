@@ -77,6 +77,7 @@
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
     $$('.service, .facts-grid > div, .about > *, .section-header, .g, .rut-grid > *, .contact-panel, .also').forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) return; // synligt direkt vid laddning
       el.classList.add('reveal'); io.observe(el);
     });
   }
@@ -298,6 +299,11 @@
     }
 
     var btn = $('button[type="submit"]', form);
+    if (form.dataset.preview) {
+      msg.className = 'form-msg ok';
+      msg.textContent = 'Förhandsvisning: formuläret fungerar, men förfrågan skickas inte härifrån.';
+      return;
+    }
     btn.disabled = true;
     btn.textContent = 'Skickar …';
     fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
