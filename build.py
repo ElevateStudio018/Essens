@@ -2,6 +2,13 @@
 import html
 from pathlib import Path
 
+# Elevate Studio's credit under every footer: the mark and the name, the whole of it one link to elevatestudio.nu.
+ELEVATE_CREDIT = '''<!-- elevate-credit -->
+<style>.elevate-credit{max-width:1240px;margin:24px auto 0;padding:20px 16px 0;border-top:1px solid rgba(128,128,128,.25);display:flex;justify-content:center;box-sizing:border-box}.elevate-credit a{display:inline-flex;align-items:center;gap:8px;padding:8px 0;font:inherit;font-size:13px;line-height:1;color:inherit;opacity:.55;text-decoration:none;transition:opacity .2s}.elevate-credit a:hover,.elevate-credit a:focus-visible{opacity:1}.elevate-credit svg{width:16px;height:16px;flex:none;display:block}@media(min-width:1024px){.elevate-credit a{font-size:14px}}</style>
+<div class="elevate-credit"><a href="https://elevatestudio.nu" target="_blank" rel="noopener"><svg viewBox="0 0 1884.3 1353.9" aria-hidden="true"><path d="M0.0 1353.9 L1218.7 0.0 L1218.7 329.1 L479.7 1136.4 L786.7 1132.4 L1215.5 687.4 L1884.3 1349.9 L1590.1 1349.9 L1218.6 994.7 L865.4 1349.9Z" fill="currentColor"/></svg>Byggd av Elevate Studio</a></div>
+'''
+
+
 ROOT = Path(__file__).parent
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 ARROW_UR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
@@ -187,7 +194,7 @@ def page(path, title, desc, body, active="", og_img="Villa-Savelangen-bild-1-1_1
     </div>
     <div class="footer-bottom"><span>© Sätterman Essens Arkitektur AB · Org.nr 559379-2764</span><span>Arkitekt SAR/MSA</span></div>
   </div>
-</footer>
+{ELEVATE_CREDIT}</footer>
 <script src="{r}assets/js/main.js" defer></script>
 </body>
 </html>
