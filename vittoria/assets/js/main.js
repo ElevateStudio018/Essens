@@ -7,6 +7,11 @@
   var doc = document.documentElement;
   doc.classList.add("js");
 
+  // Hero-variant (förhandsgranskning): ?hero=1–5
+  var hero = document.getElementById("hero");
+  var heroParam = new URLSearchParams(window.location.search).get("hero");
+  if (hero && /^[1-5]$/.test(heroParam || "")) hero.className = "hero hero--v" + heroParam;
+
   // Herovideo: stå still om besökaren vill ha mindre rörelse
   var heroVideo = document.getElementById("heroVideo");
   if (heroVideo && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -67,6 +72,19 @@
   var select = document.getElementById("tjanst");
   document.querySelectorAll("[data-service]").forEach(function (el) {
     el.addEventListener("click", function () { select.value = el.getAttribute("data-service"); });
+  });
+
+  // Offertkortet i hero skickar vidare till kontaktformuläret
+  var heroQuote = document.getElementById("heroQuote");
+  if (heroQuote) heroQuote.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var d = new FormData(heroQuote);
+    ["namn", "epost", "tjanst"].forEach(function (k) {
+      var f = form.querySelector('[name="' + k + '"]');
+      if (f && d.get(k)) f.value = d.get(k);
+    });
+    document.getElementById("kontakt").scrollIntoView({ behavior: "smooth" });
+    setTimeout(function () { form.querySelector('[name="meddelande"]').focus({ preventScroll: true }); }, 700);
   });
 
   // Omdömen

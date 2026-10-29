@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=1793275075">
+<link rel="stylesheet" href="assets/css/style.css?v=1793275483">
 </head>
 <body>
 
@@ -47,19 +47,40 @@
 <main id="main">
 
 <!-- ============================================================ HERO -->
-<section class="hero">
+<section class="hero hero--v1" id="hero">
   <video class="hero__bg" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.webp" aria-hidden="true">
     <source src="assets/video/hero-720.mp4" type="video/mp4" media="(max-width: 960px)">
     <source src="assets/video/hero-1080.mp4" type="video/mp4">
   </video>
   <div class="wrap hero__content">
-    <p class="eyebrow reveal">Professionell städning för företag</p>
-    <h1 class="reveal">Renare miljöer för en bättre morgondag.</h1>
-    <p class="hero__lead reveal">Vi skapar rena, välkomnande och hälsosamma arbetsplatser – varje dag. Med hög kvalitet, pålitlig service och hållbara metoder hjälper vi företag och fastighetsägare i hela regionen.</p>
-    <div class="hero__actions reveal">
-      <a class="btn btn--light" href="#kontakt">Boka ett kostnadsfritt möte <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="link-under" href="#tjanster">Våra tjänster <svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+    <div class="hero__box reveal">
+      <p class="eyebrow">Professionell städning för företag</p>
+      <h1>Renare miljöer för en bättre morgondag.</h1>
+      <div class="hero__side">
+        <p class="hero__lead">Vi skapar rena, välkomnande och hälsosamma arbetsplatser – varje dag. Med hög kvalitet, pålitlig service och hållbara metoder hjälper vi företag och fastighetsägare i hela regionen.</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#kontakt">Boka ett kostnadsfritt möte <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="link-under" href="#tjanster">Våra tjänster <svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        </div>
+      </div>
+      <ul class="hero__trust">
+        <li>Fast kontaktperson</li><li>Kvalitetsgaranti</li><li>Miljömärkta produkter</li><li>Ansvarsförsäkrade</li>
+      </ul>
     </div>
+    <form class="hero__quote reveal" id="heroQuote" novalidate>
+      <p class="hero__quote-eyebrow">Kostnadsfri offert</p>
+      <h2>Vad kan vi hjälpa er med?</h2>
+      <label><span>Namn</span><input name="namn" autocomplete="name"></label>
+      <label><span>E-post</span><input name="epost" type="email" autocomplete="email"></label>
+      <label><span>Tjänst</span>
+        <select name="tjanst">
+          <option value="">Välj tjänst</option>
+          <option>Kontorsstädning</option><option>Restaurangstädning</option><option>Trappstädning</option>
+          <option>Byggstädning</option><option>Fönsterputs</option><option>Serviceavtal</option>
+        </select>
+      </label>
+      <button class="btn btn--dark btn--block" type="submit">Fortsätt <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </form>
   </div>
 </section>
 
@@ -137,7 +158,7 @@
 
 <!-- ============================================================ ABOUT -->
 <section class="about" id="om-oss">
-  <div class="about__img"><img src="assets/img/hero-kontor.webp" alt="Städare från Vittoria Städ torkar av ett konferensbord i ett kontor med utsikt över staden" loading="lazy"></div>
+  <div class="about__img"><img src="assets/img/arbetssatt.webp" alt="Städteam i uniform städar en ljus matsal" loading="lazy"></div>
   <div class="about__text">
     <p class="eyebrow eyebrow--dark reveal">Vårt arbetssätt</p>
     <h2 class="reveal">En helhetslösning som gör skillnad.</h2>
@@ -180,7 +201,7 @@
 
 <!-- ============================================================ TEAM -->
 <section class="team dark">
-  <img class="team__bg" src="assets/img/team-personal.webp" alt="" loading="lazy">
+  <img class="team__bg" src="assets/img/team-personal.webp" alt="Tre medarbetare i städuniform med dammsugare och mopp" loading="lazy">
   <div class="wrap team__content">
     <p class="eyebrow reveal">Vårt team</p>
     <h2 class="reveal">Engagerade medarbetare som gör skillnad.</h2>
@@ -348,6 +369,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=1793275075"></script>
+<script src="assets/js/main.js?v=1793275483"></script>
 </body>
 </html>
