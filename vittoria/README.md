@@ -1,6 +1,6 @@
 # Vittoria Städ AB – webbplats
 
-Statisk, responsiv one-page-sajt för ett städföretag. Typsnitt: Jost (hero-rubrik, rubriker och knappar), Fraunces (rubriker i Därför-sektionen) och Source Sans 3 (brödtext). Färger: vit bakgrund, marinblå varumärkesfärg och mörk navy-sektion.
+Statisk, responsiv one-page-sajt för ett städföretag. Typsnitt: Jost (rubriker och knappar), Fraunces (logotypen) och Source Sans 3 (brödtext). Färger: vit bakgrund, marinblå varumärkesfärg och mörk navy-sektion.
 
 - `index.html` – sektioner: hero med video, om oss, därför Vittoria, tjänster, vanliga frågor, kontakt och sidfot
 - `assets/css/style.css` – stil och brytpunkter (1080 / 860 / 560 px)
