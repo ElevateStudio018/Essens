@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=1793274441">
+<link rel="stylesheet" href="assets/css/style.css?v=1793275075">
 </head>
 <body>
 
@@ -48,7 +48,10 @@
 
 <!-- ============================================================ HERO -->
 <section class="hero">
-  <img class="hero__bg" src="assets/img/hero-kontor.webp" alt="Städare från Vittoria Städ torkar av ett konferensbord i ett kontor med utsikt över staden" fetchpriority="high">
+  <video class="hero__bg" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.webp" aria-hidden="true">
+    <source src="assets/video/hero-720.mp4" type="video/mp4" media="(max-width: 960px)">
+    <source src="assets/video/hero-1080.mp4" type="video/mp4">
+  </video>
   <div class="wrap hero__content">
     <p class="eyebrow reveal">Professionell städning för företag</p>
     <h1 class="reveal">Renare miljöer för en bättre morgondag.</h1>
@@ -134,7 +137,7 @@
 
 <!-- ============================================================ ABOUT -->
 <section class="about" id="om-oss">
-  <div class="about__img"><img src="assets/img/byggnad.webp" alt="Moderna kontorsbyggnader i glas" loading="lazy"></div>
+  <div class="about__img"><img src="assets/img/hero-kontor.webp" alt="Städare från Vittoria Städ torkar av ett konferensbord i ett kontor med utsikt över staden" loading="lazy"></div>
   <div class="about__text">
     <p class="eyebrow eyebrow--dark reveal">Vårt arbetssätt</p>
     <h2 class="reveal">En helhetslösning som gör skillnad.</h2>
@@ -345,6 +348,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=1793274441"></script>
+<script src="assets/js/main.js?v=1793275075"></script>
 </body>
 </html>

@@ -7,6 +7,13 @@
   var doc = document.documentElement;
   doc.classList.add("js");
 
+  // Herovideo: stå still om besökaren vill ha mindre rörelse
+  var heroVideo = document.getElementById("heroVideo");
+  if (heroVideo && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    heroVideo.removeAttribute("autoplay");
+    heroVideo.pause();
+  }
+
   // Header bakgrund vid scroll
   var header = document.querySelector(".header");
   function onScroll() { header.classList.toggle("is-scrolled", window.scrollY > 30); }

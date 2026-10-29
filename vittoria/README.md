@@ -5,7 +5,8 @@ Statisk, responsiv one-page-sajt för ett städföretag (mörk navy, ljusblå ac
 - `index.html` – alla sektioner: hero, värdeord, tjänster, arbetssätt, varför oss, så går det till, team, omdömen, FAQ, kontakt och sidfot
 - `assets/css/style.css` – stil och brytpunkter (1100 / 960 / 640 px)
 - `assets/js/main.js` – mobilmeny, scroll-animationer, karusell för omdömen och kontaktformulär
-- `assets/img/` – bilder från Unsplash (fri licens). Byt gärna mot egna foton på personalen.
+- `assets/video/` – herovideo (1080p för dator, 720p för mobil) ihopklippt av sju klipp från Pexels (fri licens, fotograf Tima Miroshnichenko): 6195141, 6195524, 6196266, 6196269, 6195523, 6196262, 6197062
+- `assets/img/` – bilder från Unsplash (fri licens) samt AI-genererade bilder av kontor och personal (`hero-kontor.webp`, `team-personal.webp`). Byt gärna mot egna foton på personalen.
 
 ## Byt ut innan publicering (platshållare)
 
