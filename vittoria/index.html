@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vittoria Städ AB – Professionell städning för företag</title>
-<meta name="description" content="Vittoria Städ AB erbjuder kontorsstädning, restaurangstädning, trappstädning, byggstädning, fönsterputs och serviceavtal för företag och fastighetsägare. Hög kvalitet, pålitlig service och hållbara metoder.">
-<meta name="theme-color" content="#0d1b2a">
+<title>Vittoria Städ AB – Professionell lokalvård för företag</title>
+<meta name="description" content="Vittoria Städ AB erbjuder kontorsstädning, restaurangstädning, trappstädning, byggstädning, fönsterputs och serviceavtal för företag och fastighetsägare.">
+<meta name="theme-color" content="#0b1622">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=1793275483">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=1793275910">
 </head>
 <body>
 
@@ -20,26 +20,27 @@
 <header class="header" id="top">
   <div class="wrap header__inner">
     <a class="logo" href="#top" aria-label="Vittoria Städ – till startsidan">
-      <span class="logo__mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="currentColor"/><path d="M11 12l9 17 9-17" fill="none" stroke="var(--logo-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 6.5l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="var(--logo-ink)"/></svg>
-      </span>
-      <span class="logo__text">VITTORIA<small>STÄD AB</small></span>
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x=".75" y=".75" width="30.5" height="30.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 10l7 13 7-13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+      <span class="logo__text">Vittoria<span>Städ AB</span></span>
     </a>
 
     <nav class="nav" id="nav" aria-label="Huvudmeny">
       <a href="#tjanster">Tjänster</a>
       <a href="#om-oss">Om oss</a>
-      <a href="#varfor">Varför oss</a>
-      <a href="#omdomen">Omdömen</a>
+      <a href="#arbetssatt">Arbetssätt</a>
+      <a href="#omdomen">Kunder</a>
       <a href="#faq">Frågor</a>
       <a href="#kontakt">Kontakt</a>
-      <a class="btn btn--light nav__cta-mobile" href="#kontakt">Få en offert <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--light nav__cta-mobile" href="#kontakt">Begär offert <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
 
-    <a class="btn btn--light header__cta" href="#kontakt">Få en offert <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="header__right">
+      <a class="header__phone" href="tel:+46700000000">070-000 00 00</a>
+      <a class="btn btn--light btn--sm" href="#kontakt">Begär offert</a>
+    </div>
 
     <button class="burger" id="burger" aria-label="Öppna meny" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
+      <span></span><span></span>
     </button>
   </div>
 </header>
@@ -47,179 +48,138 @@
 <main id="main">
 
 <!-- ============================================================ HERO -->
-<section class="hero hero--v1" id="hero">
+<section class="hero" id="hero">
   <video class="hero__bg" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.webp" aria-hidden="true">
     <source src="assets/video/hero-720.mp4" type="video/mp4" media="(max-width: 960px)">
     <source src="assets/video/hero-1080.mp4" type="video/mp4">
   </video>
   <div class="wrap hero__content">
-    <div class="hero__box reveal">
-      <p class="eyebrow">Professionell städning för företag</p>
-      <h1>Renare miljöer för en bättre morgondag.</h1>
-      <div class="hero__side">
-        <p class="hero__lead">Vi skapar rena, välkomnande och hälsosamma arbetsplatser – varje dag. Med hög kvalitet, pålitlig service och hållbara metoder hjälper vi företag och fastighetsägare i hela regionen.</p>
-        <div class="hero__actions">
-          <a class="btn btn--light" href="#kontakt">Boka ett kostnadsfritt möte <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="link-under" href="#tjanster">Våra tjänster <svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+    <p class="label label--light reveal">Vittoria Städ AB — Professionell lokalvård</p>
+    <h1 class="reveal">Rena arbetsplatser.<br><span>Starkare verksamheter.</span></h1>
+    <div class="hero__row reveal">
+      <p class="hero__lead">Vi tar hand om städningen av kontor, restauranger, fastigheter och byggprojekt – med fast kontaktperson, tydliga avtal och kvalitet som följs upp.</p>
+      <div class="hero__actions">
+        <a class="btn btn--light" href="#kontakt">Boka kostnadsfritt möte <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="#tjanster">Våra tjänster</a>
+      </div>
+    </div>
+    <ul class="hero__areas reveal">
+      <li><a href="#tjanster"><span>01</span>Kontor &amp; lokaler</a></li>
+      <li><a href="#tjanster"><span>02</span>Restaurang</a></li>
+      <li><a href="#tjanster"><span>03</span>Fastighet &amp; trapphus</a></li>
+      <li><a href="#tjanster"><span>04</span>Bygg &amp; projekt</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================ TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Kontorsstädning</span><span>Restaurangstädning</span><span>Trappstädning</span><span>Byggstädning</span><span>Fönsterputs</span><span>Flyttstädning</span><span>Storstädning &amp; golvvård</span><span>Serviceavtal</span>
+    <span>Kontorsstädning</span><span>Restaurangstädning</span><span>Trappstädning</span><span>Byggstädning</span><span>Fönsterputs</span><span>Flyttstädning</span><span>Storstädning &amp; golvvård</span><span>Serviceavtal</span>
+  </div>
+</div>
+
+<!-- ============================================================ INTRO -->
+<section class="intro" id="om-oss">
+  <div class="wrap">
+    <div class="grid-12">
+      <p class="label col-label reveal">(01) Om Vittoria</p>
+      <div class="col-main">
+        <p class="statement reveal">Vi hjälper företag, fastighetsägare och organisationer att skapa rena, trygga och välkomnande miljöer – <em>varje dag, med samma höga nivå.</em></p>
+        <div class="pillars">
+          <div class="pillar reveal"><span class="pillar__n">01</span><h3>Fast kontaktperson</h3><p>En ansvarig som känner era lokaler och er verksamhet.</p></div>
+          <div class="pillar reveal"><span class="pillar__n">02</span><h3>Uppföljd kvalitet</h3><p>Regelbundna kvalitetskontroller och tydlig återrapportering.</p></div>
+          <div class="pillar reveal"><span class="pillar__n">03</span><h3>Hållbara metoder</h3><p>Miljömärkta produkter, mikrofiber och smart dosering.</p></div>
         </div>
       </div>
-      <ul class="hero__trust">
-        <li>Fast kontaktperson</li><li>Kvalitetsgaranti</li><li>Miljömärkta produkter</li><li>Ansvarsförsäkrade</li>
-      </ul>
     </div>
-    <form class="hero__quote reveal" id="heroQuote" novalidate>
-      <p class="hero__quote-eyebrow">Kostnadsfri offert</p>
-      <h2>Vad kan vi hjälpa er med?</h2>
-      <label><span>Namn</span><input name="namn" autocomplete="name"></label>
-      <label><span>E-post</span><input name="epost" type="email" autocomplete="email"></label>
-      <label><span>Tjänst</span>
-        <select name="tjanst">
-          <option value="">Välj tjänst</option>
-          <option>Kontorsstädning</option><option>Restaurangstädning</option><option>Trappstädning</option>
-          <option>Byggstädning</option><option>Fönsterputs</option><option>Serviceavtal</option>
-        </select>
-      </label>
-      <button class="btn btn--dark btn--block" type="submit">Fortsätt <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-    </form>
   </div>
 </section>
 
 <!-- ============================================================ SERVICES -->
-<section class="services dark" id="tjanster">
+<section class="services" id="tjanster">
   <div class="wrap">
-    <div class="split-head">
-      <div>
-        <p class="eyebrow reveal">Våra tjänster</p>
-        <h2 class="reveal">Olika tjänster<br>att välja bland.</h2>
-      </div>
-      <p class="reveal">Vi erbjuder professionell städning för företag, fastigheter och organisationer. Alltid med fokus på kvalitet, flexibilitet och hållbara lösningar – från enstaka uppdrag till långsiktiga serviceavtal.</p>
+    <div class="sec-head">
+      <p class="label reveal">(02) Tjänster</p>
+      <h2 class="reveal">Lokalvård för varje<br>typ av verksamhet.</h2>
+      <p class="sec-head__text reveal">Från enstaka uppdrag till långsiktiga serviceavtal. Vi anpassar omfattning, tider och frekvens efter era behov.</p>
     </div>
 
     <div class="cards">
-      <article class="card reveal">
+      <a class="card reveal" href="#kontakt" data-service="Kontorsstädning">
         <div class="card__img"><img src="assets/img/kontor.webp" alt="Rent kontor med glasväggar" loading="lazy"></div>
-        <div class="card__body">
-          <div><h3>Kontorsstädning</h3><p>Ett rent och trivsamt kontor – varje dag.</p></div>
-          <a class="card__btn" href="#kontakt" data-service="Kontorsstädning" aria-label="Fråga om kontorsstädning"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-      <article class="card reveal">
+        <div class="card__body"><span class="card__n">01</span><h3>Kontorsstädning</h3><p>Ett rent och trivsamt kontor – varje dag.</p><span class="card__arrow"><svg class="ico" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+      </a>
+      <a class="card reveal" href="#kontakt" data-service="Restaurangstädning">
         <div class="card__img"><img src="assets/img/restaurang.webp" alt="Restaurangmatsal" loading="lazy"></div>
-        <div class="card__body">
-          <div><h3>Restaurangstädning</h3><p>Rena lokaler för en bättre upplevelse.</p></div>
-          <a class="card__btn" href="#kontakt" data-service="Restaurangstädning" aria-label="Fråga om restaurangstädning"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-      <article class="card reveal">
+        <div class="card__body"><span class="card__n">02</span><h3>Restaurangstädning</h3><p>Rena lokaler för en bättre gästupplevelse.</p><span class="card__arrow"><svg class="ico" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+      </a>
+      <a class="card reveal" href="#kontakt" data-service="Trappstädning">
         <div class="card__img"><img src="assets/img/trapp.webp" alt="Flerbostadshus" loading="lazy"></div>
-        <div class="card__body">
-          <div><h3>Trappstädning</h3><p>Välkomnande entréer och gemensamma ytor.</p></div>
-          <a class="card__btn" href="#kontakt" data-service="Trappstädning" aria-label="Fråga om trappstädning"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-      <article class="card reveal">
+        <div class="card__body"><span class="card__n">03</span><h3>Trappstädning</h3><p>Välkomnande entréer och gemensamma ytor.</p><span class="card__arrow"><svg class="ico" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+      </a>
+      <a class="card reveal" href="#kontakt" data-service="Byggstädning">
         <div class="card__img"><img src="assets/img/bygg.webp" alt="Nybyggd fastighet" loading="lazy"></div>
-        <div class="card__body">
-          <div><h3>Byggstädning</h3><p>Professionell städning efter byggnation och renovering.</p></div>
-          <a class="card__btn" href="#kontakt" data-service="Byggstädning" aria-label="Fråga om byggstädning"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-      <article class="card reveal">
+        <div class="card__body"><span class="card__n">04</span><h3>Byggstädning</h3><p>Grov- och finstädning efter byggnation och renovering.</p><span class="card__arrow"><svg class="ico" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+      </a>
+      <a class="card reveal" href="#kontakt" data-service="Fönsterputs">
         <div class="card__img"><img src="assets/img/fonster.webp" alt="Ljus lokal med stora fönster" loading="lazy"></div>
-        <div class="card__body">
-          <div><h3>Fönsterputs</h3><p>Klara fönster och glaspartier – in- och utsida.</p></div>
-          <a class="card__btn" href="#kontakt" data-service="Fönsterputs" aria-label="Fråga om fönsterputs"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-      <article class="card reveal">
+        <div class="card__body"><span class="card__n">05</span><h3>Fönsterputs</h3><p>Klara fönster och glaspartier – in- och utsida.</p><span class="card__arrow"><svg class="ico" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+      </a>
+      <a class="card reveal" href="#kontakt" data-service="Flyttstädning">
         <div class="card__img"><img src="assets/img/flytt.webp" alt="Nystädat badrum" loading="lazy"></div>
-        <div class="card__body">
-          <div><h3>Flyttstädning</h3><p>Grundlig städning inför överlämning av lokal eller bostad.</p></div>
-          <a class="card__btn" href="#kontakt" data-service="Flyttstädning" aria-label="Fråga om flyttstädning"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-      <article class="card reveal">
+        <div class="card__body"><span class="card__n">06</span><h3>Flyttstädning</h3><p>Grundlig städning inför överlämning av lokal.</p><span class="card__arrow"><svg class="ico" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+      </a>
+      <a class="card reveal" href="#kontakt" data-service="Storstädning &amp; golvvård">
         <div class="card__img"><img src="assets/img/kontakt.webp" alt="Kontorslandskap" loading="lazy"></div>
+        <div class="card__body"><span class="card__n">07</span><h3>Storstädning &amp; golvvård</h3><p>Djupgående städning, polering och golvbehandling.</p><span class="card__arrow"><svg class="ico" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+      </a>
+      <a class="card card--cta reveal" href="#kontakt" data-service="Serviceavtal">
         <div class="card__body">
-          <div><h3>Storstädning & golvvård</h3><p>Djupgående städning, polering och golvbehandling.</p></div>
-          <a class="card__btn" href="#kontakt" data-service="Storstädning & golvvård" aria-label="Fråga om storstädning & golvvård"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="card__n">08</span>
+          <h3>Samlat serviceavtal</h3>
+          <p>Flera lokaler eller fastigheter? Ett avtal, en kontaktperson och regelbunden kvalitetsuppföljning.</p>
+          <span class="card__link">Diskutera ett avtal <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
-      </article>
-      <article class="card card--cta reveal">
-        <div class="card__cta-inner">
-          <h3>Skräddarsytt avtal?</h3>
-          <p>Har ni flera lokaler eller fastigheter? Vi tar fram ett samlat serviceavtal med en fast kontaktperson och regelbunden kvalitetsuppföljning.</p>
-          <a class="btn btn--accent" href="#kontakt">Kontakta oss <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ ABOUT -->
-<section class="about" id="om-oss">
-  <div class="about__img"><img src="assets/img/arbetssatt.webp" alt="Städteam i uniform städar en ljus matsal" loading="lazy"></div>
-  <div class="about__text">
-    <p class="eyebrow eyebrow--dark reveal">Vårt arbetssätt</p>
+<!-- ============================================================ ARBETSSÄTT -->
+<section class="method" id="arbetssatt">
+  <div class="method__img"><img src="assets/img/arbetssatt.webp" alt="Städteam i uniform städar en ljus matsal" loading="lazy"></div>
+  <div class="method__text">
+    <p class="label reveal">(03) Arbetssätt</p>
     <h2 class="reveal">En helhetslösning som gör skillnad.</h2>
-    <p class="reveal">Vi kombinerar erfarenhet, engagerade medarbetare och tydliga processer för att leverera städning av högsta kvalitet. Genom långsiktiga samarbeten, miljövänliga metoder och kontinuerlig uppföljning skapar vi rena och välkomnande miljöer – varje dag.</p>
-    <a class="btn btn--dark reveal" href="#process">Så går det till <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  </div>
-</section>
-
-<!-- ============================================================ WHY -->
-<section class="why" id="varfor">
-  <div class="wrap why__grid">
-    <div>
-      <p class="eyebrow eyebrow--dark reveal">Varför Vittoria</p>
-      <h2 class="reveal">Därför väljer företag oss.</h2>
-    </div>
-    <div class="why__item reveal"><span class="num">1</span><h3>Lokal närvaro</h3><p>Vi finns nära dig och kan snabbt anpassa oss efter dina behov.</p></div>
-    <div class="why__item reveal"><span class="num">2</span><h3>Flexibla lösningar</h3><p>Tjänster och tider som anpassas efter din verksamhet.</p></div>
-    <div class="why__item reveal"><span class="num">3</span><h3>Hög kvalitet</h3><p>Nöjda kunder och skinande resultat.</p></div>
-  </div>
-</section>
-
-<!-- ============================================================ PROCESS -->
-<section class="process" id="process">
-  <div class="wrap">
-    <div class="split-head">
-      <div>
-        <p class="eyebrow eyebrow--dark reveal">Så går det till</p>
-        <h2 class="reveal">Enkelt från första<br>kontakt till rent.</h2>
-      </div>
-      <p class="reveal">Vi gör det smidigt att komma igång. Du får en tydlig offert utan dolda kostnader och en plan som passar just era lokaler och er verksamhet.</p>
-    </div>
-    <ol class="steps">
-      <li class="step reveal"><span class="step__n">01</span><h3>Kontakt</h3><p>Hör av dig via formuläret, telefon eller e-post.</p></li>
-      <li class="step reveal"><span class="step__n">02</span><h3>Kostnadsfritt besök</h3><p>Vi går igenom ytorna och dina önskemål på plats.</p></li>
-      <li class="step reveal"><span class="step__n">03</span><h3>Offert &amp; plan</h3><p>Du får en tydlig offert och ett skräddarsytt städschema.</p></li>
-      <li class="step reveal"><span class="step__n">04</span><h3>Uppstart</h3><p>Vi sätter igång och följer upp kvaliteten löpande.</p></li>
+    <p class="method__lead reveal">Erfarenhet, engagerade medarbetare och tydliga processer. Så här går det till när vi startar ett samarbete.</p>
+    <ol class="steps" id="process">
+      <li class="reveal"><span>01</span><div><h3>Kontakt</h3><p>Hör av er via formuläret, telefon eller e-post.</p></div></li>
+      <li class="reveal"><span>02</span><div><h3>Kostnadsfritt platsbesök</h3><p>Vi går igenom ytor, behov och önskemål på plats.</p></div></li>
+      <li class="reveal"><span>03</span><div><h3>Offert &amp; städplan</h3><p>En tydlig offert utan dolda kostnader och ett skräddarsytt schema.</p></div></li>
+      <li class="reveal"><span>04</span><div><h3>Uppstart &amp; uppföljning</h3><p>Vi sätter igång och följer upp kvaliteten löpande.</p></div></li>
     </ol>
   </div>
 </section>
 
 <!-- ============================================================ TEAM -->
-<section class="team dark">
-  <img class="team__bg" src="assets/img/team-personal.webp" alt="Tre medarbetare i städuniform med dammsugare och mopp" loading="lazy">
-  <div class="wrap team__content">
-    <p class="eyebrow reveal">Vårt team</p>
+<section class="team" id="team">
+  <div class="team__text">
+    <p class="label label--light reveal">(04) Vårt team</p>
     <h2 class="reveal">Engagerade medarbetare som gör skillnad.</h2>
     <p class="reveal">Vår personal är vår största styrka. Med engagemang, ansvar och stolthet levererar vi städning som överträffar förväntningarna – varje dag.</p>
     <a class="btn btn--light reveal" href="#kontakt" data-service="Jobbansökan">Bli en del av oss <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
+  <div class="team__img"><img src="assets/img/team-personal.webp" alt="Tre medarbetare i städuniform med dammsugare och mopp" loading="lazy"></div>
 </section>
 
 <!-- ============================================================ TESTIMONIALS -->
 <!-- PLATSHÅLLARE: ersätt citaten nedan med riktiga kundomdömen innan publicering. -->
 <section class="quotes" id="omdomen">
-  <div class="wrap quotes__grid">
-    <div>
-      <p class="eyebrow eyebrow--dark reveal">Vad våra kunder säger</p>
-      <h2 class="reveal">Nöjda kunder över hela regionen.</h2>
-    </div>
-    <div class="slider reveal" id="slider" aria-roledescription="karusell">
-      <svg class="slider__mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V13C0 5.6 4 1.3 12 0l1.3 3.2C8.5 4.6 6.4 7.3 6.2 11H12v13H0zm19 0V13c0-7.4 4-11.7 12-13l1 3.2c-4.8 1.4-6.9 4.1-7.1 7.8H31v13H19z"/></svg>
+  <div class="wrap grid-12">
+    <p class="label col-label reveal">(05) Kunder</p>
+    <div class="col-main slider reveal" id="slider" aria-roledescription="karusell">
       <div class="slider__track">
         <figure class="slide is-active">
           <blockquote>”Vittoria Städ levererar alltid med hög kvalitet och pålitlighet. Våra lokaler har aldrig varit i bättre skick.”</blockquote>
@@ -237,8 +197,8 @@
       <div class="slider__nav">
         <div class="dots" role="tablist" aria-label="Välj omdöme"></div>
         <div class="arrows">
-          <button class="round" data-dir="-1" aria-label="Föregående omdöme"><svg class="ico" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
-          <button class="round" data-dir="1" aria-label="Nästa omdöme"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <button class="square" data-dir="-1" aria-label="Föregående omdöme"><svg class="ico" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button class="square" data-dir="1" aria-label="Nästa omdöme"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </div>
       </div>
     </div>
@@ -247,16 +207,15 @@
 
 <!-- ============================================================ FAQ -->
 <section class="faq" id="faq">
-  <div class="wrap faq__grid">
-    <div>
-      <p class="eyebrow eyebrow--dark reveal">Vanliga frågor</p>
+  <div class="wrap grid-12">
+    <div class="col-label">
+      <p class="label reveal">(06) Vanliga frågor</p>
       <h2 class="reveal">Bra att veta.</h2>
-      <p class="reveal">Hittar du inte svaret? <a class="link" href="#kontakt">Kontakta oss</a> så hjälper vi dig.</p>
     </div>
-    <div class="faq__list">
+    <div class="col-main faq__list">
       <details class="reveal" open>
         <summary>Vad kostar det?</summary>
-        <p>Priset beror på ytans storlek, hur ofta vi städar och vilka moment som ingår. Efter ett kostnadsfritt besök får du en fast offert utan dolda avgifter.</p>
+        <p>Priset beror på ytans storlek, hur ofta vi städar och vilka moment som ingår. Efter ett kostnadsfritt besök får ni en fast offert utan dolda avgifter.</p>
       </details>
       <details class="reveal">
         <summary>Kan ni städa utanför kontorstid?</summary>
@@ -271,8 +230,8 @@
         <p>Vi använder i första hand miljömärkta rengöringsmedel och mikrofiber, vilket ger ett bra resultat med mindre kemikalier och vatten.</p>
       </details>
       <details class="reveal">
-        <summary>Vad händer om jag inte är nöjd?</summary>
-        <p>Hör av dig inom 48 timmar så kommer vi tillbaka och åtgärdar det kostnadsfritt – det ingår i vår kvalitetsgaranti.</p>
+        <summary>Vad händer om vi inte är nöjda?</summary>
+        <p>Hör av er inom 48 timmar så kommer vi tillbaka och åtgärdar det kostnadsfritt – det ingår i vår kvalitetsgaranti.</p>
       </details>
       <details class="reveal">
         <summary>Är ni försäkrade?</summary>
@@ -283,23 +242,22 @@
 </section>
 
 <!-- ============================================================ CONTACT -->
-<!-- PLATSHÅLLARE: byt telefonnummer, e-post och ort till Vittoria Städ AB:s riktiga uppgifter (även i sidfoten och i assets/js/main.js). -->
-<section class="contact dark" id="kontakt">
-  <img class="contact__bg" src="assets/img/kontakt.webp" alt="" loading="lazy">
-  <div class="wrap contact__grid">
-    <div class="contact__info">
-      <p class="eyebrow reveal">Kontakt</p>
-      <h2 class="reveal">Vi hjälper dig gärna!</h2>
-      <p class="reveal">Fyll i dina uppgifter så kontaktar vi dig för en kostnadsfri offert eller ett förutsättningslöst möte.</p>
-      <ul class="contact__list reveal">
-        <li><span class="dot-ico"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg></span><a href="tel:+46700000000">070-000 00 00</a></li>
-        <li><span class="dot-ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><a href="mailto:info@vittoriastad.se">info@vittoriastad.se</a></li>
-        <li><span class="dot-ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span>Din ort och hela regionen</span></li>
-        <li><span class="dot-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span>Mån–fre 07–17</span></li>
-      </ul>
+<!-- PLATSHÅLLARE: byt telefonnummer, e-post och ort till Vittoria Städ AB:s riktiga uppgifter (även i headern, sidfoten och i assets/js/main.js). -->
+<section class="contact" id="kontakt">
+  <div class="wrap grid-12">
+    <div class="col-label contact__info">
+      <p class="label label--light reveal">(07) Kontakt</p>
+      <h2 class="reveal">Låt oss prata om era lokaler.</h2>
+      <p class="reveal">Fyll i formuläret så återkommer vi inom en arbetsdag med förslag på upplägg eller en tid för ett kostnadsfritt platsbesök.</p>
+      <dl class="contact__list reveal">
+        <div><dt>Telefon</dt><dd><a href="tel:+46700000000">070-000 00 00</a></dd></div>
+        <div><dt>E-post</dt><dd><a href="mailto:info@vittoriastad.se">info@vittoriastad.se</a></dd></div>
+        <div><dt>Område</dt><dd>Din ort och hela regionen</dd></div>
+        <div><dt>Öppettider</dt><dd>Mån–fre 07–17</dd></div>
+      </dl>
     </div>
 
-    <form class="form reveal" id="form" novalidate>
+    <form class="col-main form reveal" id="form" novalidate>
       <div class="form__row">
         <label><span>Namn *</span><input name="namn" autocomplete="name" required></label>
         <label><span>E-post *</span><input name="epost" type="email" autocomplete="email" required></label>
@@ -318,7 +276,7 @@
       </label>
       <label><span>Meddelande *</span><textarea name="meddelande" rows="4" required></textarea></label>
       <label class="form__consent"><input type="checkbox" name="samtycke" required><span>Jag godkänner att Vittoria Städ sparar mina uppgifter för att kunna besvara förfrågan.</span></label>
-      <button class="btn btn--accent btn--block" type="submit">Skicka förfrågan <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button class="btn btn--light" type="submit">Skicka förfrågan <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
     </form>
   </div>
@@ -328,47 +286,45 @@
 
 <!-- ============================================================ FOOTER -->
 <footer class="footer">
-  <div class="wrap footer__grid">
-    <div>
-      <a class="logo logo--footer" href="#top" aria-label="Vittoria Städ – till toppen">
-        <span class="logo__mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="currentColor"/><path d="M11 12l9 17 9-17" fill="none" stroke="var(--logo-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 6.5l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="var(--logo-ink)"/></svg>
-        </span>
-        <span class="logo__text">VITTORIA<small>STÄD AB</small></span>
-      </a>
-      <p class="footer__tag">Professionell städning för företag, fastigheter och organisationer.</p>
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__intro">
+        <p>Professionell lokalvård för företag, fastigheter och organisationer.</p>
+        <a class="btn btn--light btn--sm" href="#kontakt">Begär offert</a>
+      </div>
+      <div>
+        <h4>Tjänster</h4>
+        <ul>
+          <li><a href="#tjanster">Kontorsstädning</a></li><li><a href="#tjanster">Restaurangstädning</a></li>
+          <li><a href="#tjanster">Trapp- &amp; byggstädning</a></li><li><a href="#tjanster">Fönsterputs</a></li>
+          <li><a href="#tjanster">Serviceavtal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Företaget</h4>
+        <ul>
+          <li><a href="#om-oss">Om oss</a></li><li><a href="#arbetssatt">Arbetssätt</a></li>
+          <li><a href="#faq">Vanliga frågor</a></li><li><a href="#kontakt" data-service="Jobbansökan">Jobba hos oss</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+46700000000">070-000 00 00</a></li>
+          <li><a href="mailto:info@vittoriastad.se">info@vittoriastad.se</a></li>
+          <li>Mån–fre 07–17</li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4>Tjänster</h4>
-      <ul>
-        <li><a href="#tjanster">Kontorsstädning</a></li><li><a href="#tjanster">Restaurangstädning</a></li>
-        <li><a href="#tjanster">Trapp- &amp; byggstädning</a></li><li><a href="#tjanster">Fönsterputs</a></li>
-        <li><a href="#tjanster">Storstädning &amp; golvvård</a></li>
-      </ul>
+    <p class="footer__word" aria-hidden="true">Vittoria Städ</p>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Vittoria Städ AB</span>
+      <span>Org.nr 000000-0000 · F-skattsedel · Ansvarsförsäkrade</span>
+      <a href="#top">Till toppen ↑</a>
     </div>
-    <div>
-      <h4>Företaget</h4>
-      <ul>
-        <li><a href="#om-oss">Om oss</a></li><li><a href="#process">Så går det till</a></li>
-        <li><a href="#faq">Vanliga frågor</a></li><li><a href="#kontakt" data-service="Jobbansökan">Jobba hos oss</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Kontakt</h4>
-      <ul>
-        <li><a href="tel:+46700000000">070-000 00 00</a></li>
-        <li><a href="mailto:info@vittoriastad.se">info@vittoriastad.se</a></li>
-        <li>Mån–fre 07–17</li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap footer__bottom">
-    <span>© <span id="year">2026</span> Vittoria Städ AB</span>
-    <span>Org.nr 000000-0000 · F-skattsedel · Ansvarsförsäkrade</span>
-    <a href="#top">Till toppen ↑</a>
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=1793275483"></script>
+<script src="assets/js/main.js?v=1793275910"></script>
 </body>
 </html>
